@@ -1,8 +1,13 @@
 import java.util.Scanner;
 
-class GiceGame{
+class DiceGame{
     public static void main(String[] args){
         System.out.println("Rolling dice...");
+	Scanner sc = new Scanner(System.in);
+
+	System.out.println("What is your name?");
+	String name = sc.nextLine();
+	System.out.println("Hello, " + name);
 
         double rand1 = Math.random()*6 + 1;
         double rand2 = Math.random()*6 + 1;
